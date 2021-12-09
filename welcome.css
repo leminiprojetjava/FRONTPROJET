@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr.rounded {
+    margin-top: -4px;
+    margin-bottom: -4px;
+    border-top: 8px solid #464444;
+    border-radius: 50px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.one {
+    text-align: left;
+    justify-content: left;
+    background-image: linear-gradient(to right, black, #2c2c2c);
+}
+
+.two {
+    background-image: linear-gradient(to left, black, #2c2c2c);
+}
+
+.three {
+    background-image: linear-gradient(to right, black, #2c2c2c);
+}
+
+.ctn {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+img {
+    height: 400px;
+    width: 600px;
+    border: 3px solid #464444;
+}
